@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.scanner{
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 3px solid rgb(105, 205, 252);
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+
+.result{
+    margin-top: 30px;
+    font-weight: 600;
+}

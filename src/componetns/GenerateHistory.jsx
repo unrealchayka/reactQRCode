@@ -1,0 +1,13 @@
+import { QRCodeSVG } from "qrcode.react"
+import { GENERATE_DATA } from "../constants"
+
+export default () => {
+    const data = JSON.parse(localStorage.getItem(GENERATE_DATA) || '[]')
+    return (
+        data.map((value, index) => {
+            return (
+                    <div key={index}>{index+1}: {value} <QRCodeSVG value={value} /></div>
+            )
+        })
+    )
+}
